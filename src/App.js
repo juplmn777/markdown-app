@@ -28,7 +28,7 @@ class App extends Component {
   render() {
     return (
       <div className="container">
-        <h1 className="has-text-centered mt-2 main-title">Markdown-App</h1>
+        <h1 className="has-text-centered main-title">Markdown-App</h1>
 
         <div className="columns">
           <div className="column is-half">
