@@ -1,7 +1,9 @@
 import React, { Component } from 'react';
 import 'bulma/css/bulma.min.css';
+import './App.css'
 import marked from 'marked';
 import { sampleText } from './sampleText';
+import './fonts/authentic_signature/Authentic Signature.ttf'
 
 class App extends Component {
   state = {
@@ -26,12 +28,12 @@ class App extends Component {
   render() {
     return (
       <div className="container">
-        <h1 className="title is-2 has-text-centered mt-2">Markdown-App</h1>
+        <h1 className="has-text-centered mt-2 main-title">Markdown-App</h1>
 
         <div className="columns">
           <div className="column is-half">
             <div className="box">
-              <h2 className="title is-4 has-text-centered">MarkDown</h2>
+              <h2 className="has-text-centered box-title">MarkDown</h2>
               <textarea
                 class="textarea is-danger has-fixed-size"
                 value={this.state.text}
@@ -42,8 +44,11 @@ class App extends Component {
           </div>
           <div className="column is-half">
             <div className="box">
-              <h2 className="title is-4 has-text-centered">Résultat html:</h2>
-              <div className="content" dangerouslySetInnerHTML={this.renderText(this.state.text)} />
+              <h2 className="has-text-centered box-title">Résultat html:</h2>
+              <div
+                className="content"
+                dangerouslySetInnerHTML={this.renderText(this.state.text)}
+              />
             </div>
           </div>
         </div>

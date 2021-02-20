@@ -1,0 +1,19 @@
+@font-face {
+  font-family: 'authentic-signature';
+  src: local('authentic-signature'),
+    url('./fonts/authentic_signature/Authentic\ Signature.ttf')
+      format('truetype');
+  font-weight: normal;
+}
+
+h1.main-title {
+  font-family: authentic-signature;
+  font-size: 6em;
+  text-decoration: underline;
+}
+
+h2.box-title {
+  font-family: authentic-signature;
+  font-size: 3em;
+  text-decoration: underline;
+}
