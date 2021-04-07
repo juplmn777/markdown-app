@@ -1,9 +1,9 @@
 import React, { Component } from 'react';
-import 'bulma/css/bulma.min.css';
-import './App.css'
+
+import './App.css';
 import marked from 'marked';
 import { sampleText } from './sampleText';
-import './fonts/authentic_signature/Authentic Signature.ttf'
+import './fonts/authentic_signature/Authentic Signature.ttf';
 
 class App extends Component {
   state = {
@@ -35,7 +35,7 @@ class App extends Component {
             <div className="box">
               <h2 className="has-text-centered box-title">MarkDown</h2>
               <textarea
-                class="textarea is-danger has-fixed-size"
+                className="textarea is-danger has-fixed-size"
                 value={this.state.text}
                 onChange={this.handleChange}
                 rows="20"
@@ -44,7 +44,7 @@ class App extends Component {
           </div>
           <div className="column is-half">
             <div className="box">
-              <h2 className="has-text-centered box-title">Résultat html:</h2>
+              <h2 className="has-text-centered box-title">Résultat html</h2>
               <div
                 className="content"
                 dangerouslySetInnerHTML={this.renderText(this.state.text)}
